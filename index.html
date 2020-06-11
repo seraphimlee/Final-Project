@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" 
+        href="javascript:void(0)" 
+        onclick="myFunction()" 
+        title="Toggle Navigation Menu">
+        
+        <i class="fa fa-bars"></i></a>
+
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#ATEEZ" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ATEEZ</a>
+    <a href="#news" class="w3-bar-item w3-button w3-padding-large w3-hide-small"> NEWS</a>
+   
+    <div class="w3-dropdown-hover w3-hide-small">
+      <a href="videos.html" button class="w3-padding-large w3-button" title="Videos">VIDEOS <i class="fa fa-caret-down"></i></a>   
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="videos.html#MVs" class="w3-bar-item w3-button">Official MVs</a>
+        <a href="videos.html#Performance" class="w3-bar-item w3-button">Performances/Practices</a>
+        <a href="videos.html#Interviews" class="w3-bar-item w3-button">Interviews</a>
+        <a href="videos.html#Extras" class="w3-bar-item w3-button">Extras</a>
+      </div>
+    </div>
+    
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE 
+        <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    
+    <div class="w3-dropdown-hover w3-hide-small w3-right">
+    <button class="w3-padding-large w3-button w3-hover-red w3-hide-small w3-right">
+      <i class="fa fa-search"></i></button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="#video" class="w3-bar-item w3-button">Videos</a>
+      <a href="#ATEEZ" class="w3-bar-item w3-button">ATEEZ</a>
+      <a href="#news" class="w3-bar-item w3-button">news</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="#MV" class="w3-bar-item w3-button">MV</a>
+      <a a href="#Twitter" class="w3-bar-item w3-button">Twitter</a>
+    <a href="#Performance"class="w3-bar-item w3-button">Performance</a> 
+      </div>
+  </div>
+</div>
+
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#ATEEZ" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ATEEZ</a>
+  <a href="#news" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">NEWS</a>
+  
+  <div class="w3-dropdown-hover w3-hide-small">
+    <a href="videos.html" button class="w3-padding-large w3-button" title="Videos">VIDEOS <i class="fa fa-caret-down"></i></a>   
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="videos.html#MVs" class="w3-bar-item w3-button">Official MVs</a>
+      <a href="videos.html#Performance" class="w3-bar-item w3-button">Performances/Practices</a>
+      <a href="videos.html#Interviews" class="w3-bar-item w3-button">Interviews</a>
+      <a href="videos.html#Extras" class="w3-bar-item w3-button">Extras</a>
+    </div><a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="https://global.yes24.com/search?q=ATEEZ" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" 
+    style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/ATEEZ_Answer1.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+         
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/ATEEZ_Answer2.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/ATEEZ_Illusion1.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          
+    </div>
+  </div>
+
+  <!-- ATEEZ PROFILES -->
+    <div class="w3-container w3-content w3-center w3-padding-64" 
+        style="max-width:800px" 
+        id="ATEEZ"> 
+    <h2 class="w3-wide">ATEEZ</h2>
+    <p class="w3-opacity"><i>8 Makes 1 Team</i></p>
+    <p class="w3-justify">ATEEZ debuted on October 24,2018 under the management of KQ Entertainment, 
+      who are more well known for their music production. As the first official idols of the company,
+      the 8-member team took to the stage with their album 'TREASURE EP.1: All to Zero'.</p>
+    
+    <!--Hongjoong's Profile-->
+      <div class="w3-row w3-padding-32"> 
+        <main class="Index" 
+              data-collection-id="profile_mainclassindex" 
+              data-controller="IndexFirstSectionHeight, Parallax, IndexNavigation" 
+              id="profile_id_mainclassindex" 
+              data-controllers-bound="IndexFirstSectionHeight, Parallax, IndexNavigation">
+            
+              
+          <section id="ateez-kim-hongjoong" 
+                  class="Index-page" 
+                  data-collection-id="hongjoongprofile_dataid" 
+                  data-parallax-id="hongjoongprofile_dataid" 
+                  data-edit-main-image="Background">
+        
+                  
+                  <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><em>Hongjoong</em></p>
+                    <img src="images/Hongjoong4.jpg" 
+                    class="w3-round w3-image" 
+                    alt="Profilepic_hongjoong"
+                    style= max-width:1000px
+                    data-image-resolution="1000w" 
+                    src="images/Hongjoong4.jpg?format=1000w">
+                  </div>
+              
+                  <!-- Profile info moves to underneath picture on smaller screen -->
+                  <div class="w3-col m6 w3-center w3-padding-large">
+                        
+                                 
+                      <div class="image-name">
+                        <div class="image-title" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="">Full name: <em>Kim Hongjoong (김홍중)</em></p>
+                      </div>
+                      </div>
+                                
+                      <div class="image-subtitle-wrapper">
+                        <div class="image-subtitle" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="min-font-set">Position: Leader, Rapper, Composer</p>
+                        <p class="">Birthday: November 7, 1998</p>
+                        </div>
+                      </div>                
+                  </div>                     
+            </section>
+          </main> 
+        
+  <div class="w3-container"></div>
+  
+  <div class="w3-content w3-display-container w3-center w3-padding-large" style="max-width:500px">
+    <img class="Gallery_hongjoong" src="images/Hongjoong1.jpg" style="width:100%">
+    <img class="Gallery_hongjoong" src="images/Hongjoong2.jpg" style="width:100%">
+    <img class="Gallery_hongjoong" src="images/Hongjoong3.jpg" style="width:100%">
+    <img class="Gallery_hongjoong" src="images/Hongjoong5.jpg" style="width:100%">
+    <img class="Gallery_hongjoong" src="images/Hongjoong6.jpg" style="width:100%">
+    <img class="Gallery_hongjoong" src="images/Hongjoong7.jpg" style="width:100%">
+    <img class="Gallery_hongjoong" src="images/Hongjoong8.jpg" style="width:100%">
+    <img class="Gallery_hongjoong" src="images/Hongjoong9.jpg" style="width:100%">
+    <img class="Gallery_hongjoong" src="images/Hongjoong10.jpg" style="width:100%">
+    <img class="Gallery_hongjoong" src="images/Hongjoong11.jpg" style="width:100%">
+    <img class="Gallery_hongjoong" src="images/Hongjoong12.jpg" style="width:100%">
+    <img class="Gallery_hongjoong" src="images/Hongjoong13.jpg" style="width:100%">
+    <img class="Gallery_hongjoong" src="images/Hongjoong14.jpg" style="width:100%">
+    <div class="w3-center w3-container w3-section w3-large w3-text-deep-orange w3-display-bottom" style="width:100%">
+      <button class="w3-button w3-deep-orange w3-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+      <button class="w3-button w3-deep-orange w3-right" onclick="plusDivs(1, 0)">&#10095;</button>
+        </div>
+      </div>
+  
+  
+   
+  </div>
+  <!--end of Hongjoong's profile-->
+
+
+    <!--Seonghwa's profile-->
+    <div class="w3-row w3-padding-32"> 
+      <main class="Index" 
+          data-collection-id="profile_mainclassindex" 
+          data-controller="IndexFirstSectionHeight, Parallax, IndexNavigation" 
+          id="profile_id_mainclassindex" 
+          data-controllers-bound="IndexFirstSectionHeight, Parallax, IndexNavigation">
+    
+    
+          <section id="ateez-park-seonghwa" 
+                  class="Index-page" 
+                  data-collection-id="seonghwaprofile_dataid" 
+                  data-parallax-id="seonghwaprofile_dataid" 
+                  data-edit-main-image="Background">
+        
+                  
+                  <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><em>Seonghwa</em></p>
+                    <img src="images/Seonghwa8.jpg" 
+                    class="w3-round w3-image" 
+                    alt="Profilepic_Seonghwa"
+                    style= max-width:1000px
+                    data-image-resolution="1000w" 
+                    src="images/Seonghwa8.jpg?format=1000w">
+                  </div>
+              
+                  <!-- Profile info moves to underneath picture on smaller screen -->
+                  <div class="w3-col m6 w3-center w3-padding-large">
+                                            
+                                 
+                      <div class="image-name">
+                        <div class="image-title" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="">Full name: <em>Park Seonghwa (김홍중)</em></p>
+                      </div>
+                      </div>
+                                
+                      <div class="image-subtitle-wrapper">
+                        <div class="image-subtitle" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="min-font-set">Position: Vocalist, Visual, Oldest</p>
+                        <p class="">Birthday: April 3, 1998</p>
+                        </div>
+                      </div>
+                      
+                      
+                    </div>
+                  </section>
+                </main>         
+              
+  <div class="w3-container"></div>
+  
+  <div class="w3-content w3-display-container w3-center w3-padding-large" style="max-width:500px">
+    <img class="Gallery_seonghwa" src="images/Seonghwa1.jpg" style="width:100%">
+    <img class="Gallery_seonghwa" src="images/Seonghwa2.jpg" style="width:100%">
+    <img class="Gallery_seonghwa" src="images/Seonghwa3.jpg" style="width:100%">
+    <img class="Gallery_seonghwa" src="images/Seonghwa4.jpg" style="width:100%">
+    <img class="Gallery_seonghwa" src="images/Seonghwa5.jpg" style="width:100%">
+    <img class="Gallery_seonghwa" src="images/Seonghwa6.jpg" style="width:100%">
+    <img class="Gallery_seonghwa" src="images/Seonghwa7.jpg" style="width:100%">
+    <img class="Gallery_seonghwa" src="images/Seonghwa9.jpg" style="width:100%">
+    <img class="Gallery_seonghwa" src="images/Seonghwa10.jpg" style="width:100%">
+    <img class="Gallery_seonghwa" src="images/Seonghwa11.jpg" style="width:100%">
+    <img class="Gallery_seonghwa" src="images/Seonghwa12.jpg" style="width:100%">
+    <img class="Gallery_seonghwa" src="images/Seonghwa13.jpg" style="width:100%">
+    <img class="Gallery_seonghwa" src="images/Seonghwa14.jpg" style="width:100%">
+    <div class="w3-center w3-container w3-section w3-large w3-text-deep-orange w3-display-bottom" 
+          style="width:100%";>
+          <button class="w3-button w3-deep-orange w3-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+          <button class="w3-button w3-deep-orange w3-right" onclick="plusDivs(1, 1)">&#10095;</button>
+    </div>
+  </div>
+  
+   
+</div>
+  <!--End of Seonghwa's profile-->
+    
+
+    <!--Yunho's profile-->
+    <div class="w3-row w3-padding-32"> 
+    <main class="Index" 
+          data-collection-id="profile_mainclassindex" 
+          data-controller="IndexFirstSectionHeight, Parallax, IndexNavigation" 
+          id="profile_id_mainclassindex" 
+          data-controllers-bound="IndexFirstSectionHeight, Parallax, IndexNavigation">
+    
+          <section id="ateez-jung-yunho" 
+                  class="Index-page" 
+                  data-collection-id="yunhoprofile_dataid" 
+                  data-parallax-id="yunhoprofile_dataid" 
+                  data-edit-main-image="Background">
+        
+                  
+                  <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><em>Yunho</em></p>
+                    <img src="images/Yunho13.jpg" 
+                    class="w3-round w3-image" 
+                    alt="Profilepic_Yunho"
+                    style= max-width:1000px
+                    data-image-resolution="1000w" 
+                    src="images/Yunho13.jpg?format=1000w">
+                  </div>
+              
+                  <!-- Profile info moves to underneath picture on smaller screen -->
+                  <div class="w3-col m6 w3-center w3-padding-large">
+                                            
+                                 
+                      <div class="image-name">
+                        <div class="image-title" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="">Full name: <em>Jung Yunho (정윤호)</em></p>
+                      </div>
+                      </div>
+                                
+                      <div class="image-subtitle-wrapper">
+                        <div class="image-subtitle" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="min-font-set">Position: Performane, Vocalist</p>
+                        <p class="">Birthday: March 23, 1999</p>
+                        </div>
+                      </div>
+         
+                    </div>
+                  </section>
+                </main>
+                  
+
+  <div class="w3-container"></div>
+  
+  <div class="w3-content w3-display-container w3-center w3-padding-large" style="max-width:500px">
+    <img class="Gallery_yunho" src="images/Yunho1.jpg" style="width:100%">
+    <img class="Gallery_yunho" src="images/Yunho2.jpg" style="width:100%">
+    <img class="Gallery_yunho" src="images/Yunho3.jpg" style="width:100%">
+    <img class="Gallery_yunho" src="images/Yunho4.jpg" style="width:100%">
+    <img class="Gallery_yunho" src="images/Yunho5.jpg" style="width:100%">
+    <img class="Gallery_yunho" src="images/Yunho6.jpg" style="width:100%">
+    <img class="Gallery_yunho" src="images/Yunho7.jpg" style="width:100%">
+    <img class="Gallery_yunho" src="images/Yunho8.jpg" style="width:100%">
+    <img class="Gallery_yunho" src="images/Yunho9.jpg" style="width:100%">
+    <img class="Gallery_yunho" src="images/Yunho10.jpg" style="width:100%">
+    <img class="Gallery_yunho" src="images/Yunho11.jpg" style="width:100%">
+    <img class="Gallery_yunho" src="images/Yunho12.jpg" style="width:100%">
+    <img class="Gallery_yunho" src="images/Yunho14.jpg" style="width:100%">
+    <div class="w3-center w3-container w3-section w3-large w3-text-deep-orange w3-display-bottom" 
+          style="width:100%";>
+          <button class="w3-button w3-deep-orange w3-left" onclick="plusDivs(-1, 2)">&#10094;</button>
+          <button class="w3-button w3-deep-orange w3-right" onclick="plusDivs(1, 2)">&#10095;</button>
+    </div>
+  </div>
+  
+  
+  </div>
+  <!--End of Yunho's profile-->
+
+  
+    <!--Yeosang's profile-->
+    <div class="w3-row w3-padding-32"> 
+    <main class="Index" 
+          data-collection-id="profile_mainclassindex" 
+          data-controller="IndexFirstSectionHeight, Parallax, IndexNavigation" 
+          id="profile_id_mainclassindex" 
+          data-controllers-bound="IndexFirstSectionHeight, Parallax, IndexNavigation">
+    
+          <section id="ateez-kang-yeosang" 
+                  class="Index-page" 
+                  data-collection-id="yeosangprofile_dataid" 
+                  data-parallax-id="yeosangprofile_dataid" 
+                  data-edit-main-image="Background">
+        
+                  
+                  <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><em>Yeosang</em></p>
+                    <img src="images/Yeosang9.jpg" 
+                    class="w3-round w3-image" 
+                    alt="Profilepic_Yeosang"
+                    style= max-width:1000px
+                    data-image-resolution="1000w" 
+                    src="images/Yeosang9.jpg?format=1000w">
+                  </div>
+              
+                  <!-- Profile info moves to underneath picture on smaller screen -->
+                  <div class="w3-col m6 w3-center w3-padding-large">          
+                                 
+                      <div class="image-name">
+                        <div class="image-title" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="">Full name: <em>Kang Yeosang (강여상)</em></p>
+                      </div>
+                      </div>
+                                
+                      <div class="image-subtitle-wrapper">
+                        <div class="image-subtitle" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="min-font-set">Position: Performance, Vocalist</p>
+                        <p class="">Birthday: June 15, 1999</p>
+                        </div>
+                      </div>
+                              
+                    </div>
+                </section> 
+            </main>
+
+  <div class="w3-container"></div>
+  
+  <div class="w3-content w3-display-container w3-center w3-padding-large" style="max-width:500px">
+    <img class="Gallery_yeosang" src="images/Yeosang1.jpg" style="width:100%">
+    <img class="Gallery_yeosang" src="images/Yeosang2.jpg" style="width:100%">
+    <img class="Gallery_yeosang" src="images/Yeosang3.jpg" style="width:100%">
+    <img class="Gallery_yeosang" src="images/Yeosang4.jpg" style="width:100%">
+    <img class="Gallery_yeosang" src="images/Yeosang5.jpg" style="width:100%">
+    <img class="Gallery_yeosang" src="images/Yeosang6.jpg" style="width:100%">
+    <img class="Gallery_yeosang" src="images/Yeosang7.jpg" style="width:100%">
+    <img class="Gallery_yeosang" src="images/Yeosang8.jpg" style="width:100%">
+    <img class="Gallery_yeosang" src="images/Yeosang10.jpg" style="width:100%">
+    <img class="Gallery_yeosang" src="images/Yeosang11.jpg" style="width:100%">
+    <img class="Gallery_yeosang" src="images/Yeosang12.jpg" style="width:100%">
+    <img class="Gallery_yeosang" src="images/Yeosang13.jpg" style="width:100%">
+    <img class="Gallery_yeosang" src="images/Yeosang14.jpg" style="width:100%">
+    <div class="w3-center w3-container w3-section w3-large w3-text-deep-orange w3-display-bottom" 
+          style="width:100%";>
+          <button class="w3-button w3-deep-orange w3-left" onclick="plusDivs(-1, 3)">&#10094;</button>
+          <button class="w3-button w3-deep-orange w3-right" onclick="plusDivs(1, 3)">&#10095;</button>
+    </div>
+  </div>
+  
+  
+  </div>
+  <!--End of Yeosang's profile-->
+
+
+    <!--San's profile-->
+    <div class="w3-row w3-padding-32"> 
+    <main class="Index" 
+          data-collection-id="profile_mainclassindex" 
+          data-controller="IndexFirstSectionHeight, Parallax, IndexNavigation" 
+          id="profile_id_mainclassindex" 
+          data-controllers-bound="IndexFirstSectionHeight, Parallax, IndexNavigation">
+    
+          <section id="ateez-choi-san" 
+                  class="Index-page" 
+                  data-collection-id="sanprofile_dataid" 
+                  data-parallax-id="sanprofile_dataid" 
+                  data-edit-main-image="Background">
+        
+                  
+                  <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><em>San</em></p>
+                    <img src="images/San9.jpg" 
+                    class="w3-round w3-image" 
+                    alt="Profilepic_San"
+                    style= max-width:1000px
+                    data-image-resolution="1000w" 
+                    src="images/San9.jpg?format=1000w">
+                  </div>
+              
+                  <!-- Profile info moves to underneath picture on smaller screen -->
+                  <div class="w3-col m6 w3-center w3-padding-large">
+                               
+                      <div class="image-name">
+                        <div class="image-title" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="">Full name: <em>Choi San (최산)</em></p>
+                      </div>
+                      </div>
+                                
+                      <div class="image-subtitle-wrapper">
+                        <div class="image-subtitle" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="min-font-set">Position: Vocalist, Performance</p>
+                        <p class="">Birthday: July 10, 1999</p>
+                        </div>
+                      </div>
+                </div>
+              </section> 
+            </main>
+
+  <div class="w3-container"></div>
+  
+  <div class="w3-content w3-display-container w3-center w3-padding-large" style="max-width:500px">
+    <img class="Gallery_san" src="images/San1.jpg" style="width:100%">
+    <img class="Gallery_san" src="images/San2.jpg" style="width:100%">
+    <img class="Gallery_san" src="images/San3.jpg" style="width:100%">
+    <img class="Gallery_san" src="images/San4.jpg" style="width:100%">
+    <img class="Gallery_san" src="images/San5.jpg" style="width:100%">
+    <img class="Gallery_san" src="images/San6.jpg" style="width:100%">
+    <img class="Gallery_san" src="images/San7.jpg" style="width:100%">
+    <img class="Gallery_san" src="images/San8.jpg" style="width:100%">
+    <img class="Gallery_san" src="images/San10.jpg" style="width:100%">
+    <img class="Gallery_san" src="images/San11.jpg" style="width:100%">
+    <img class="Gallery_san" src="images/San12.jpg" style="width:100%">
+    <img class="Gallery_san" src="images/San13.jpg" style="width:100%">
+    <img class="Gallery_san" src="images/San14.jpg" style="width:100%">
+    <div class="w3-center w3-container w3-section w3-large w3-text-deep-orange w3-display-bottom" 
+          style="width:100%";>
+          <button class="w3-button w3-deep-orange w3-left" onclick="plusDivs(-1, 4)">&#10094;</button>
+          <button class="w3-button w3-deep-orange w3-right" onclick="plusDivs(1, 4)">&#10095;</button>
+    </div>
+  </div>
+  
+  
+  </div>
+  <!--End of San's profile-->
+
+
+    <!--Mingi's profile-->
+    <div class="w3-row w3-padding-32"> 
+    <main class="Index" 
+          data-collection-id="profile_mainclassindex" 
+          data-controller="IndexFirstSectionHeight, Parallax, IndexNavigation" 
+          id="profile_id_mainclassindex" 
+          data-controllers-bound="IndexFirstSectionHeight, Parallax, IndexNavigation">
+    
+          <section id="ateez-song-mingi" 
+                  class="Index-page" 
+                  data-collection-id="mingiprofile_dataid" 
+                  data-parallax-id="mingiprofile_dataid" 
+                  data-edit-main-image="Background">
+        
+                  
+                  <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><em>Mingi</em></p>
+                    <img src="images/Mingi11.jpg" 
+                    class="w3-round w3-image" 
+                    alt="Profilepic_Mingi"
+                    style= max-width:1000px
+                    data-image-resolution="1000w" 
+                    src="images/Mingi11.jpg?format=1000w">
+                  </div>
+              
+                  <!-- Profile info moves to underneath picture on smaller screen -->
+                  <div class="w3-col m6 w3-center w3-padding-large">      
+                                 
+                      <div class="image-name">
+                        <div class="image-title" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="">Full name: <em>Song Mingi (송민기)</em></p>
+                      </div>
+                      </div>
+                                
+                      <div class="image-subtitle-wrapper">
+                        <div class="image-subtitle" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="min-font-set">Position: Rapper, Performance</p>
+                        <p class="">Birthday: August 9, 1999</p>
+                        </div>
+                      </div>                      
+                      
+                    </div>
+                </section> 
+              </main>
+
+  <div class="w3-container"></div>
+  
+  <div class="w3-content w3-display-container w3-center w3-padding-large" style="max-width:500px">
+    <img class="Gallery_mingi" src="images/Mingi1.jpg" style="width:100%">
+    <img class="Gallery_mingi" src="images/Mingi2.jpg" style="width:100%">
+    <img class="Gallery_mingi" src="images/Mingi3.jpg" style="width:100%">
+    <img class="Gallery_mingi" src="images/Mingi4.jpg" style="width:100%">
+    <img class="Gallery_mingi" src="images/Mingi5.jpg" style="width:100%">
+    <img class="Gallery_mingi" src="images/Mingi6.jpg" style="width:100%">
+    <img class="Gallery_mingi" src="images/Mingi7.jpg" style="width:100%">
+    <img class="Gallery_mingi" src="images/Mingi8.jpg" style="width:100%">
+    <img class="Gallery_mingi" src="images/Mingi9.jpg" style="width:100%">
+    <img class="Gallery_mingi" src="images/Mingi10.jpg" style="width:100%">
+    <img class="Gallery_mingi" src="images/Mingi12.jpg" style="width:100%">
+    <img class="Gallery_mingi" src="images/Mingi13.jpg" style="width:100%">
+    <img class="Gallery_mingi" src="images/Mingi14.jpg" style="width:100%">
+    <div class="w3-center w3-container w3-section w3-large w3-text-deep-orange w3-display-bottom" 
+          style="width:100%";>
+          <button class="w3-button w3-deep-orange w3-left" onclick="plusDivs(-1, 5)">&#10094;</button>
+          <button class="w3-button w3-deep-orange w3-right" onclick="plusDivs(1, 5)">&#10095;</button>
+    </div>
+  </div>
+  
+  
+  </div>
+  <!--End of Mingi's profile-->
+
+  
+    <!--Wooyoung's profile-->
+    <div class="w3-row w3-padding-32"> 
+      <main class="Index" 
+            data-collection-id="profile_mainclassindex" 
+            data-controller="IndexFirstSectionHeight, Parallax, IndexNavigation" 
+            id="profile_id_mainclassindex" 
+            data-controllers-bound="IndexFirstSectionHeight, Parallax, IndexNavigation">
+    
+            <section id="ateez-jung-wooyoung" 
+                  class="Index-page" 
+                  data-collection-id="wooyungprofile_dataid" 
+                  data-parallax-id="wooyoungprofile_dataid" 
+                  data-edit-main-image="Background">
+        
+                  
+                  <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><em>Wooyoung</em></p>
+                    <img src="images/Wooyoung10.jpg" 
+                    class="w3-round w3-image" 
+                    alt="Profilepic_Wooyoung"
+                    style= max-width:1000px
+                    data-image-resolution="1000w" 
+                    src="images/Wooyoung10.jpg?format=1000w">
+                  </div>
+              
+                  <!-- Profile info moves to underneath picture on smaller screen -->
+                  <div class="w3-col m6 w3-center w3-padding-large">
+                                 
+                      <div class="image-name">
+                        <div class="image-title" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="">Full name: <em>Jung Wooyoung (정우영)</em></p>
+                      </div>
+                      </div>
+                                
+                      <div class="image-subtitle-wrapper">
+                        <div class="image-subtitle" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="min-font-set">Position: Vocalist, Performer, Visual</p>
+                        <p class="">Birthday: November 26, 1999</p>
+                        </div>
+                      </div>
+        
+                      
+                      
+                    </div>
+                  </section> 
+                </main>
+
+  <div class="w3-container"></div>
+  
+  <div class="w3-content w3-display-container w3-center w3-padding-large" style="max-width:500px">
+    <img class="Gallery_wooyoung" src="images/Wooyoung1.jpg" style="width:100%">
+    <img class="Gallery_wooyoung" src="images/Wooyoung2.jpg" style="width:100%">
+    <img class="Gallery_wooyoung" src="images/Wooyoung3.jpg" style="width:100%">
+    <img class="Gallery_wooyoung" src="images/Wooyoung4.jpg" style="width:100%">
+    <img class="Gallery_wooyoung" src="images/Wooyoung5.jpg" style="width:100%">
+    <img class="Gallery_wooyoung" src="images/Wooyoung6.jpg" style="width:100%">
+    <img class="Gallery_wooyoung" src="images/Wooyoung7.jpg" style="width:100%">
+    <img class="Gallery_wooyoung" src="images/Wooyoung8.jpg" style="width:100%">
+    <img class="Gallery_wooyoung" src="images/Wooyoung9.jpg" style="width:100%">
+    <img class="Gallery_wooyoung" src="images/Wooyoung11.jpg" style="width:100%">
+    <img class="Gallery_wooyoung" src="images/Wooyoung12.jpg" style="width:100%">
+    <img class="Gallery_wooyoung" src="images/Wooyoung13.jpg" style="width:100%">
+    <img class="Gallery_wooyoung" src="images/Wooyoung14.jpg" style="width:100%">
+    <div class="w3-center w3-container w3-section w3-large w3-text-deep-orange w3-display-bottom" 
+          style="width:100%";>
+          <button class="w3-button w3-deep-orange w3-left" onclick="plusDivs(-1, 6)">&#10094;</button>
+          <button class="w3-button w3-deep-orange w3-right" onclick="plusDivs(1, 6)">&#10095;</button>
+    </div>
+  </div>
+  
+  
+  </div>
+  <!--End of Wooyoung's profile-->
+
+  
+    <!--Jongho's profile-->
+    <div class="w3-row w3-padding-32"> 
+      <main class="Index" 
+            data-collection-id="profile_mainclassindex" 
+            data-controller="IndexFirstSectionHeight, Parallax, IndexNavigation" 
+            id="profile_id_mainclassindex" 
+            data-controllers-bound="IndexFirstSectionHeight, Parallax, IndexNavigation">
+    
+            <section id="ateez-choi-jongho" 
+                  class="Index-page" 
+                  data-collection-id="jonghoprofile_dataid" 
+                  data-parallax-id="jonghoprofile_dataid" 
+                  data-edit-main-image="Background">
+        
+                  
+                  <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><em>Jongho</em></p>
+                    <img src="images/Jongho11.jpg" 
+                    class="w3-round w3-image" 
+                    alt="Profilepic_Jongho"
+                    style= max-width:1000px
+                    data-image-resolution="1000w" 
+                    src="images/Jongho11.jpg?format=1000w">
+                  </div>
+              
+                  <!-- Profile info moves to underneath picture on smaller screen -->
+                  <div class="w3-col m6 w3-center w3-padding-large">
+                    
+                      <div class="image-name">
+                        <div class="image-title" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="">Full name: <em>Choi Jongho (최종호)</em></p>
+                      </div>
+                      </div>
+                                
+                      <div class="image-subtitle-wrapper">
+                        <div class="image-subtitle" 
+                        data-animation-override="" 
+                        data-width-percentage="100" 
+                        style="font-size: 100%;">
+                        <p class="min-font-set">Position: Main Vocalist, Youngest</p>
+                        <p class="">Birthday: October 12, 2000</p>
+                        </div>
+                      </div>
+        
+                    </div>
+              </section> 
+            </main>
+
+  <div class="w3-container"></div>
+  
+  <div class="w3-content w3-display-container w3-center w3-padding-large" style="max-width:500px">
+    <img class="Gallery_jongho" src="images/Jongho1.jpg" style="width:100%">
+    <img class="Gallery_jongho" src="images/Jongho2.jpg" style="width:100%">
+    <img class="Gallery_jongho" src="images/Jongho3.jpg" style="width:100%">
+    <img class="Gallery_jongho" src="images/Jongho4.jpg" style="width:100%">
+    <img class="Gallery_jongho" src="images/Jongho5.jpg" style="width:100%">
+    <img class="Gallery_jongho" src="images/Jongho6.jpg" style="width:100%">
+    <img class="Gallery_jongho" src="images/Jongho7.jpg" style="width:100%">
+    <img class="Gallery_jongho" src="images/Jongho8.jpg" style="width:100%">
+    <img class="Gallery_jongho" src="images/Jongho9.jpg" style="width:100%">
+    <img class="Gallery_jongho" src="images/Jongho10.jpg" style="width:100%">
+    <img class="Gallery_jongho" src="images/Jongho12.jpg" style="width:100%">
+    <img class="Gallery_jongho" src="images/Jongho13.jpg" style="width:100%">
+    <img class="Gallery_jongho" src="images/Jongho14.jpg" style="width:100%">
+    <div class="w3-center w3-container w3-section w3-large w3-text-deep-orange w3-display-bottom" 
+          style="width:100%";>
+          <button class="w3-button w3-deep-orange w3-left" onclick="plusDivs(-1, 7)">&#10094;</button>
+          <button class="w3-button w3-deep-orange w3-right" onclick="plusDivs(1, 7)">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!--End of Jongho's profile--> 
+
+<script>
+  var slideIndex = [1,1,1,1,1,1,1,1];
+  var slideId = ["Gallery_hongjoong", "Gallery_seonghwa", "Gallery_yunho", "Gallery_yeosang", "Gallery_san", "Gallery_mingi", "Gallery_wooyoung", "Gallery_jongho"]
+  showDivs(1,0);
+  showDivs(1,1);
+  showDivs(1,2);
+  showDivs(1,3);
+  showDivs(1,4);
+  showDivs(1,5);
+  showDivs(1,6);
+  showDivs(1,7);
+
+    
+  function plusDivs(n, no) {
+    showDivs(slideIndex[no] += n, no);
+  }
+  
+  function showDivs(n, no) {
+    var i;
+    var x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    
+    x[slideIndex[no]-1].style.display = "block";
+  }
+  </script>
+  
+  
+        
+  </div>
+</div>           
+  
+  
+  <!--End of Profiles-->
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="news">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">NEWS</h2>
+      <p class="w3-opacity w3-center"><i>Upcoming events and schedules</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">ATEEZ will be participating in KCON:TACT 2020 <span class="w3-tag w3-right w3-margin-left">June 20-26th</span></li>
+        <li class="w3-padding">ATEEZ the Fellowship: Map the Treasure World Tour temporarily postponed <span class="w3-tag w3-right w3-margin-left">Postponed</span></li>
+        <li class="w3-padding">Yeosang's Birthday!! 🎉<span class="w3-tag w3-right w3-margin-left">June 15th 0:00 KST</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/ATEEZ_Tour.jpg" alt="World Tour" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white" style="padding-bottom: 3.95rem;">
+            <p><b>ATEEZ the Fellowship: Map the Treasure</b></p>
+            <p class="w3-opacity">Currently Postponed</p>
+            <p>Due to the ongoing global pandemic, the tour has been temporarily postponted</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/ATEEZ_lightiny.jpg" alt="Lightstick" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Official Light Stick Open</b></p>
+            <p class="w3-opacity">Jan 21 2020</p>
+            <p>The official ATEEZ Light Stick is now open!</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Now</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/ATEEZ_group3.jpg" alt="MTV article" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white" style="padding-bottom: 2.8rem">
+            <p><b>'How ATEEZ Became Unstoppable', MTV News</b></p>
+            <p class="w3-opacity">Aril 21 2020</p>
+            <p>The Korean group went from playing community centers to selling out arenas in under a year. So, how did they do it?</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.location = 'http://www.mtv.com/news/3163884/ateez-became-unstoppable-interview/'">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Concert Location </label></p>
+        <input class="w3-input w3-border" type="text" placeholder="City name?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="https://www.ticketmaster.com/ateez-tickets/artist/2595862" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" 
+        href="javascript:void(0)" 
+        onclick="myFunction()" 
+        title="Toggle Navigation Menu">
+        
+        <i class="fa fa-bars"></i></a>
+
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="index.html#ATEEZ" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ATEEZ</a>
+    <a href="index.html#news" class="w3-bar-item w3-button w3-padding-large w3-hide-small"> NEWS</a>
+    
+    <div class="w3-dropdown-hover w3-hide-small">
+        <a href="videos.html" button class="w3-padding-large w3-button" title="Videos">VIDEOS <i class="fa fa-caret-down"></i></a>   
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="videos.html#MVs" class="w3-bar-item w3-button">Official MVs</a>
+          <a href="videos.html#Performance" class="w3-bar-item w3-button">Performances/Practices</a>
+          <a href="videos.html#Interviews" class="w3-bar-item w3-button">Interviews</a>
+          <a href="videos.html#Extras" class="w3-bar-item w3-button">Extras</a>
+        </div>
+      </div>
+    
+      <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small ">
+    <button class="w3-padding-large w3-button w3-hover-red w3-hide-small w3-left">
+      <i class="fa fa-search"></i></button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="#video" class="w3-bar-item w3-button">Videos</a>
+      <a href="#ATEEZ" class="w3-bar-item w3-button">ATEEZ</a>
+      <a href="#news" class="w3-bar-item w3-button">News</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="#MV" class="w3-bar-item w3-button">MV</a>
+      <a href="#Twitter" class="w3-bar-item w3-button">Twitter</a>
+      <a href="#Performance" class="w3-bar-item w3-button">Performance</a> 
+      </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html#ATEEZ" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ATEEZ</a>
+  <a href="index.html#news" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">NEWS</a>
+  
+  <div class="w3-dropdown-hover w3-hide-small">
+    <a href="videos.html" button class="w3-padding-large w3-button" title="Videos">VIDEOS <i class="fa fa-caret-down"></i></a>   
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="videos.html#MVs" class="w3-bar-item w3-button">Official MVs</a>
+      <a href="videos.html#Performance" class="w3-bar-item w3-button">Performances/Practices</a>
+      <a href="videos.html#Interviews" class="w3-bar-item w3-button">Interviews</a>
+      <a href="videos.html#Extras" class="w3-bar-item w3-button">Extras</a>
+    </div>
+  
+</div><a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+<!-- Video Content -->
+<div class="w3-black" id="videos">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Official MVs</h2>
+  </div>
+  </div>
+
+
+  <div class="w3-black" id="videos">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Performance & Dance Practices</h2>
+  </div>
+  </div>
+
+
+  <div class="w3-black" id="videos">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Interviews</h2>
+  </div>
+  </div>
+
+
+
+
+  <div class="w3-black" id="videos">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide w3-center">Extras</h2>
+</div>
+</div>
+
+
+
+  </body>
+  </html>
