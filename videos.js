@@ -227,6 +227,18 @@ const VIDEOS = [
         "title": "ATEEZ 밍키웨이 #1",
         "type": "Variety",
     },
+    
+    {
+        "youtubeId": "8q6ym_idjcU",
+        "title": "ATEEZ MARSASMR #1",
+        "type": "Variety",
+    },
+    
+    {
+        "youtubeId": "hMDDhHEd0zE",
+        "title": "ATEEZ BYHONGJOONG #1",
+        "type": "Variety",
+    },
 
     {
         "youtubeId": "QvphAt2ttYQ",

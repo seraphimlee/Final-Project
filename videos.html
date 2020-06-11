@@ -11,6 +11,12 @@ body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
+
+.responsive {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
 </style>
 
 <body>
@@ -26,16 +32,17 @@ body {font-family: "Lato", sans-serif}
         <i class="fa fa-bars"></i></a>
 
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="index.html#ATEEZ" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ATEEZ</a>
+    <a href="index.html#ATEEZ" class="w3-bar-item w3-button w3-padding-large w3-hide-small">
+      <img src="images/ATEEZ_logo.jpg" alt="logo" style="margin: -7px;max-width: 57px;"></a>
     <a href="index.html#news" class="w3-bar-item w3-button w3-padding-large w3-hide-small"> NEWS</a>
     
     <div class="w3-dropdown-hover w3-hide-small">
         <a href="videos.html" button class="w3-padding-large w3-button" title="Videos">VIDEOS <i class="fa fa-caret-down"></i></a>   
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="videos.html#MVs" class="w3-bar-item w3-button">Official MVs</a>
-          <a href="videos.html#Performance" class="w3-bar-item w3-button">Performances/Practices</a>
-          <a href="videos.html#Interviews" class="w3-bar-item w3-button">Interviews</a>
-          <a href="videos.html#Variety" class="w3-bar-item w3-button">Variety</a>
+          <a href="#MV" class="w3-bar-item w3-button">Official MVs</a>
+          <a href="#Performance" class="w3-bar-item w3-button">Performances/Practices</a>
+          <a href="#Interviews" class="w3-bar-item w3-button">Interviews</a>
+          <a href="#Variety" class="w3-bar-item w3-button">Variety</a>
         </div>
       </div>
     
@@ -52,28 +59,29 @@ body {font-family: "Lato", sans-serif}
       <i class="fa fa-search"></i></button>
     <div class="w3-dropdown-content w3-bar-block w3-card-4">
       <a href="search.html" class="w3-bar-item w3-button">Videos</a>
-      <a href="#ATEEZ" class="w3-bar-item w3-button">ATEEZ</a>
-      <a href="#news" class="w3-bar-item w3-button">News</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-      <a href="#MV" class="w3-bar-item w3-button">MV</a>
-      <a href="#Twitter" class="w3-bar-item w3-button">Twitter</a>
-      <a href="#Performance" class="w3-bar-item w3-button">Performance</a> 
+      <a href="index.html#ATEEZ" class="w3-bar-item w3-button">ATEEZ</a>
+      <a href="index.html#news" class="w3-bar-item w3-button">News</a>
+      <a href="index.html#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="videos.html#MV" class="w3-bar-item w3-button">MV</a>
+      <a href="https://twitter.com/ateezofficial" class="w3-bar-item w3-button">Twitter</a>
+      <a href="videos.html#Performance" class="w3-bar-item w3-button">Performance</a> 
       </div>
   </div>
 </div>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="index.html#ATEEZ" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ATEEZ</a>
+  <a href="index.html#ATEEZ" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">
+    <img src="images/ATEEZ_logo.jpg" alt="logo" style="margin: -7px;max-width: 57px;"></a>
   <a href="index.html#news" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">NEWS</a>
   
   <div class="w3-dropdown-hover w3-hide-small">
     <a href="videos.html" button class="w3-padding-large w3-button" title="Videos">VIDEOS <i class="fa fa-caret-down"></i></a>   
     <div class="w3-dropdown-content w3-bar-block w3-card-4">
-      <a href="videos.html#MVs" class="w3-bar-item w3-button">Official MVs</a>
-      <a href="videos.html#Performance" class="w3-bar-item w3-button">Performances/Practices</a>
-      <a href="videos.html#Interviews" class="w3-bar-item w3-button">Interviews</a>
-      <a href="videos.html#Variety" class="w3-bar-item w3-button">Variety</a>
+      <a href="#MV" class="w3-bar-item w3-button">Official MVs</a>
+      <a href="#Performance" class="w3-bar-item w3-button">Performances/Practices</a>
+      <a href="#Interviews" class="w3-bar-item w3-button">Interviews</a>
+      <a href="#Variety" class="w3-bar-item w3-button">Variety</a>
     </div>
   </div>
 
@@ -81,40 +89,318 @@ body {font-family: "Lato", sans-serif}
   <a href="https://global.yes24.com/search?q=ATEEZ" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Merch</a>
   </div>
 </div>
+
+
+
+
+
 <!-- Video Content -->
-<div class="w3-black" id="videos">
+<div class="w3-black" id="MV">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">Official MVs</h2>
+
+
+      <div class="w3-row-padding">
+
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/tLV83ndOwz4" 			
+          style="width:100%;cursor:pointer" alt="treasure"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/F-89J5Qu3r0"
+          style="width:100%;cursor:pointer" alt="from"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/ukbr7xyPoRQ" 
+          style="width:100%;cursor:pointer" alt="promise"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/RqJ1rH9M5G0" 
+          style="width:100%;cursor:pointer" alt="pirate king"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/nKU4OVH18mE" 
+          style="width:100%;cursor:pointer" alt="say my name"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/QbjmVyP9RFg" 
+          style="width:100%;cursor:pointer" alt="hala hala"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/i_HzsHss94E" 
+          style="width:100%;cursor:pointer" alt="illusion"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/FIInyEWWW-s" 
+          style="width:100%;cursor:pointer" alt="wave"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/7wcM9Eq3UbI" 
+          style="width:100%;cursor:pointer" alt="aurora"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/Z_BhMhZpAug" 
+          style="width:100%;cursor:pointer" alt="wonderland"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/ZLQm-8Z6C8M" 
+          style="width:100%;cursor:pointer" alt="utopia"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/yW7wZX3DUaY" 
+          style="width:100%;cursor:pointer" alt="answer"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+
+      </div>
+      
+      <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+          <iframe id="iframe01" style="width:100%"></iframe>
+        </div>
+      </div>
+      
+      <script>
+      function onClick(element) {
+        document.getElementById("iframe01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+      }
+      </script>
+    </div>
   </div>
-  </div>
 
 
 
-
-
-  <div class="w3-black" id="videos">
+  <div class="w3-black" id="Performance">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">Performance & Dance Practices</h2>
-  </div>
+
+      <div class="w3-row-padding">
+
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/5A9EMLrURS8" 			
+          style="width:100%;cursor:pointer" alt="KQ performance i"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/Eh9LI9EpK2E"
+          style="width:100%;cursor:pointer" alt="KQ performance ii"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/H7flzjxjQNc" 
+          style="width:100%;cursor:pointer" alt="KQ performance iii"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/qFtwDgkz_-E" 
+          style="width:100%;cursor:pointer" alt="win"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/Nzw4E-fQoLE" 
+          style="width:100%;cursor:pointer" alt="horizon practice"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/0R6tRuVFVrQ" 
+          style="width:100%;cursor:pointer" alt="MAMA 2019"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/nCxoi-i1Zrc" 
+          style="width:100%;cursor:pointer" alt="very good"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/AFP6QLw0ClY" 
+          style="width:100%;cursor:pointer" alt="wonderland halloween"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/KW_H0UFotf" 
+          style="width:100%;cursor:pointer" alt="i need u"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/WHciwe5EGAM" 
+          style="width:100%;cursor:pointer" alt="aurora ny"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/hWpeQJc35Rk" 
+          style="width:100%;cursor:pointer" alt="say my name practice"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+        <div class="w3-container w3-third">
+          <iframe src="https://www.youtube.com/embed/A4WckOkyrj4" 
+          style="width:100%;cursor:pointer" alt="mama practice"
+          onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+        </div>
+      </div>
+      
+      <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+          <iframe id="iframe01" style="width:100%"></iframe>
+        </div>
+      </div>
+      
+      <script>
+      function onClick(element) {
+        document.getElementById("iframe01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+      }
+      </script>
+    </div>
   </div>
 
 
-  <div class="w3-black" id="videos">
+
+  <div class="w3-black" id="Interviews">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">Interviews</h2>
+
+      <div class="w3-container w3-third">
+        <iframe src="https://www.youtube.com/embed/8UNUlB6sYhw" 
+        style="width:100%;cursor:pointer" alt="young hollywood"
+        onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+      </div>
+      <div class="w3-container w3-third">
+        <iframe src="https://www.youtube.com/embed/GBjb2n3cefA" 
+        style="width:100%;cursor:pointer" alt="DKDKTV"
+        onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+      </div>
+      <div class="w3-container w3-third">
+        <iframe src="https://www.youtube.com/embed/XknURO3AeJU" 
+        style="width:100%;cursor:pointer" alt="twister"
+        onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+      </div>
+      <div class="w3-container w3-third">
+        <iframe src="https://www.youtube.com/embed/RydhRSg-SmU" 
+        style="width:100%;cursor:pointer" alt="react"
+        onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+      </div>
+      <div class="w3-container w3-third">
+        <iframe src="https://www.youtube.com/embed/BQywfpsfGes" 
+        style="width:100%;cursor:pointer" alt="vlive wave win"
+        onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+      </div>
+      <div class="w3-container w3-third">
+        <iframe src="https://www.youtube.com/embed/X_LuM5CACgg" 
+        style="width:100%;cursor:pointer" alt="brisxlife"
+        onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+      </div>
+      
+    </div>
+  
+      <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+       <div class="w3-modal-content w3-animate-zoom">
+        <iframe id="iframe01" style="width:100%"></iframe>
+       </div>
+      </div>
+    <script>
+  function onClick(element) {
+    document.getElementById("iframe01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+  }
+  </script>
   </div>
-  </div>
+ </div>
 
-
-
-
-  <div class="w3-black" id="videos">
+  <div class="w3-black" id="Variety">
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
     <h2 class="w3-wide w3-center">Variety</h2>
-</div>
-</div>
 
+    <div class="w3-container w3-third">
+      <iframe src="https://www.youtube.com/embed/QvphAt2ttYQ" 
+      style="width:100%;cursor:pointer" alt="pawpaw meme"
+      onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+    </div>
+    <div class="w3-container w3-third">
+      <iframe src="https://www.youtube.com/embed/hMDDhHEd0zE" 
+      style="width:100%;cursor:pointer" alt="byhongjoong"
+      onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+    </div>
+    <div class="w3-container w3-third">
+      <iframe src="https://www.youtube.com/embed/8q6ym_idjcU" 
+      style="width:100%;cursor:pointer" alt="marsasmr"
+      onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+    </div>
+    <div class="w3-container w3-third">
+      <iframe src="https://www.youtube.com/embed/vJKHnfR5jd0" 
+      style="width:100%;cursor:pointer" alt="anewz"
+      onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+    </div>
+    <div class="w3-container w3-third">
+      <iframe src="https://www.youtube.com/embed/RHJv7ybZlGE" 
+      style="width:100%;cursor:pointer" alt="yeosangview"
+      onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+    </div>
+    <div class="w3-container w3-third">
+      <iframe src="https://www.youtube.com/embed/DVjqAF_7SeQ" 
+      style="width:100%;cursor:pointer" alt="sanchelin"
+      onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+    </div>
+    <div class="w3-container w3-third">
+      <iframe src="https://www.youtube.com/embed/x8WGz_ObJR8" 
+      style="width:100%;cursor:pointer" alt="meokooyoung"
+      onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+    </div>
+    <div class="w3-container w3-third">
+      <iframe src="https://www.youtube.com/embed/mV2oSrrpqcA" 
+      style="width:100%;cursor:pointer" alt="minkiway"
+      onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+    </div>
+    <div class="w3-container w3-third">
+      <iframe src="https://www.youtube.com/embed/1dy2M3HZ294" 
+      style="width:100%;cursor:pointer" alt="jjongst"
+      onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+    </div>
+    <div class="w3-container w3-third">
+      <iframe src="https://www.youtube.com/embed/_dIc-FJ-1XM&list=PL_G3lYLGW-D-dqRts6sXRytn68g99grxI" 
+      style="width:100%;cursor:pointer" alt="wanted"
+      onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+    </div>
+    <div class="w3-container w3-third">
+      <iframe src="https://www.youtube.com/embed/l8OouOaY-Go&list=PLQv1U2oSD8oD_PkQSQJEWC1fsfDBt0Qi3" 
+      style="width:100%;cursor:pointer" alt="treasure film"
+      onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+    </div>
+    <div class="w3-container w3-third">
+      <iframe src="https://www.youtube.com/embed/_mu4bhi-egs&list=PL_G3lYLGW-D8QRXX2oeyfEfGw47g_Q7_W" 
+      style="width:100%;cursor:pointer" alt="logbook"
+      onclick="onClick(this)" class="w3-hover-opacity"></iframe>
+    </div>
+  </div>
 
+      <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+      <div class="w3-modal-content w3-animate-zoom">
+        <iframe id="iframe01" style="width:100%"></iframe>
+      </div>
+      </div>
+    <script>
+  function onClick(element) {
+    document.getElementById("iframe01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+      }
+  </script>
+  </div>
+</div>
 
   </body>
   </html>
